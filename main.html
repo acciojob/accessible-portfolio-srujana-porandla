@@ -3,11 +3,40 @@
 <html>
 
 <head>
+	<title>Accessible Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1 role="My portfolio">My portfolio</h1>
+	<nav role="navigation">
+		<ul role="list">
+			<li role="list items">
+				<a href="#about me">About me</a>
+				<a href="#Projects">Projects</a>
+			    <a href="#Contact">Contact</a>
+			</li>
+		</ul>
+	</nav>
+	 <main>
+        <!-- Image with ARIA role and alt attribute -->
+        <section id="about">
+            <img role="img" src="profile.jpg" alt="Profile picture of [Your Name]">
+            <p>Hello! I am [Your Name], a web developer with a passion for creating accessible and user-friendly websites.</p>
+        </section>
+
+        <!-- Projects List with ARIA roles -->
+        <section id="projects">
+            <h2 role="heading">Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1: Description of project 1.</li>
+                <li role="listitem">Project 2: Description of project 2.</li>
+                <li role="listitem">Project 3: Description of project 3.</li>
+            </ul>
+        </section>
+    </main>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
